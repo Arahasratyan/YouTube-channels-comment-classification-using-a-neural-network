@@ -175,7 +175,6 @@ for _e in range(epochs):
         for i in range(0, len(d_train.test_list), d_train.batch_size):
             batch_items = d_train.test_list[i: i + d_train.batch_size]
 
-            # Replicate your __getitem__ padding logic manually
             max_length = len(batch_items[-1][0])
 
             _data = []
